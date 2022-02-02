@@ -8,9 +8,7 @@ const AdminProfile = () => {
   const dispatch = useDispatch()
   const user = useSelector((state) => state.admin.users)
   const title = useSelector((state) => state.admin.titles)
-  console.log(user)
-  console.log(title)
-
+  
   useEffect(() => {
     const mostrarData = () => {
       dispatch(admin())
@@ -28,13 +26,13 @@ const AdminProfile = () => {
         <div className='contenedor-perfil'>
           <div className='perfil'>
             <h2>{user.name} {user.lastname}</h2>
-              <p className='dato-perfil admin'>{user.position}</p>
-              <p className='dato-perfil upper'>{title.email}</p>
-              <p className='info-perfil'>{user.email}</p>
-              <p className='dato-perfil upper'>{title.phone}</p>
-              <p className='info-perfil'>{user.cell}</p>
-              <p className='dato-perfil upper'>{title.linkedin}</p>
-              <p className='info-perfil'>{user.linkedin}</p>
+            <p className='dato-perfil admin'>{user.position}</p>
+            <p className='dato-perfil upper'>{title.email}</p>
+            <p className='info-perfil'>{user.email}</p>
+            <p className='dato-perfil upper'>{title.phone}</p>
+            <p className='info-perfil'>{user.cell}</p>
+            <p className='dato-perfil upper'>{title.linkedin}</p>
+            <p className='info-perfil'>{user.linkedin}</p>
           </div>
         </div>
       </div>

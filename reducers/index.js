@@ -1,12 +1,14 @@
 import { combineReducers } from "redux";
 import login from "./login";
 import home from "./home";
-import admin from "./admin";
+import admin from "./admin"
+import mentees from "./mentees";
 
 const allReducers = combineReducers({
   login,
   home,
-  admin,
+  admin, 
+  mentees
 });
 
 /**

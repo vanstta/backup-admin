@@ -1,3 +1,5 @@
+@use '../../theme' as theme;
+
 .mi-perfil {
     margin-left: 20%;
     font-size: 24px;
@@ -8,54 +10,46 @@
     width: 65%;
     height: 60vh;
     margin: 3% 20% 3% 20%;
-    border: 1.5px solid #DADEEB;
+    border: 1.5px solid theme.$color-gray;
     border-radius: 10px;
     padding: 2% 0 2% 0;
-  }
-  
-  .foto-perfil {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-  }
-  
-  .contenedor-foto {
+    .contenedor-foto {
     display: flex;
     justify-content: center;
     width: 43%;
     margin-top: 20px;
+      .foto-perfil {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+    }
   }
-  
-  .contenedor-perfil {
-    border-left: 1.5px solid #DADEEB;
+    .contenedor-perfil {
+    border-left: 1.5px solid theme.$color-gray;;
     padding-left: 2.5%;
+      .perfil {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+        .perfil h2 {
+          font-size:25px;
+          font-weight: 500;
+        }
+        .dato-perfil {
+          color: theme.$color-gray-secondary;
+        }
+        .upper {
+        text-transform: uppercase;
+        margin-top: 25px;
+        font-size: 12px;
+        }
+        .info-perfil {
+        font-size: 16px;
+        margin-top: 10px;
+        }
+        .admin {
+          margin-top: 12px;
+        }
+      }
+    }
   }
-  
-  .dato-perfil {
-    color: #8798AD;
-  }
-  
-  .upper {
-    text-transform: uppercase;
-    margin-top: 25px;
-    font-size: 12px;
-  }
-  .info-perfil {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  .perfil {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  .perfil h2 {
-    font-size:25px;
-    font-weight: 500;
-  }
-
-  .admin {
-    margin-top: 12px;
-  }
-

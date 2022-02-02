@@ -1,0 +1,99 @@
+@use "../../theme" as theme;
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .card__container {
+    margin: 0 auto;
+  }
+}
+
+.renctangle {
+  width: 864px;
+  height: 211px;
+  background: theme.$color-green-secondary;
+  color: theme.$color-white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-left: 32px;
+
+  .renctangle__title {
+    width: 330px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .renctangle__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    width: 434px;
+    height: 24px;
+    margin-top: 8px;
+  }
+}
+
+.card {
+  display: flex;
+  position: relative;
+  left: 3.44%;
+  top: -96px;
+  gap: 16px;
+
+  .card__item {
+    height: 240px;
+    border: 1px solid theme.$color-gray;
+    box-shadow: 0 0 10px rgba(135, 152, 173, 0.1);
+    border-radius: 8px;
+    background: theme.$color-white;
+    width: 284px;
+
+    .card__title {
+      height: 56px;
+      color: theme.$color-green-secondary;
+      padding: 16px;
+      margin-top: 16px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 120%;
+      display: flex;
+      align-items: center;
+    }
+
+    .card__paragraph {
+      height: 71px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 0 18px;
+      margin-top: 12px;
+      color: theme.$color-black;
+    }
+
+    .card__btn {
+      margin-top: 1.5em;
+      margin-left: 16px;
+      border-radius: 8px;
+      border: 1px solid theme.$color-black;
+      width: 184px;
+      padding: 3.7px 16px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

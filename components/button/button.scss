@@ -1,0 +1,23 @@
+@use "../../theme" as theme;
+
+.btn {
+  color: theme.$color-white;
+  background-color: theme.$color-green-primary;
+  border-style: none;
+  border-radius: 8px;
+  width: 184px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.2s;
+
+  &:hover {
+    background-color: theme.$color-green-secondary;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: theme.$color-green-primary;
+  }
+}

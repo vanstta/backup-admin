@@ -1,0 +1,97 @@
+@use '../../theme'as theme;
+
+footer {
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
+    .footer-slogan {
+        background-color: theme.$color-black-opacity;
+        color: theme.$color-black;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .p-small {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .p-large {
+            font-size: 40px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    section {
+        background-color: theme.$color-black;
+        color: theme.$color-white;
+        display: flex;
+        justify-content: center;
+        height: 314px;
+        align-items: flex-start;
+
+        .footer-article {
+            margin: 2em 4em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .logo {
+                margin: 0.5em;
+                fill: theme.$color-white;
+                filter: invert(0.5) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(100) contrast(105%);
+            }
+
+            .footer-nav {
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .social-media {
+                    display: flex;
+                    gap: 5px;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 1em;
+                    text-decoration: none;
+                    color: inherit;
+                    margin: 0.5em;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .social-media-icon {
+                    background-color: theme.$color-green-primary;
+                    border-radius: 50%;
+                    height: 2em;
+                    width: 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        background-color: theme.$color-green-primary;
+                    }
+                }
+
+            }
+
+            .nav-title {
+                color: theme.$color-green-secondary;
+                margin: 0.5em;
+                font-weight: 500;
+            }
+        }
+    }
+}

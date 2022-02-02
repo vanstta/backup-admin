@@ -8,9 +8,8 @@ export const requestAdminFailed = createAction("REQUEST_ADMIN_FAILED");
 export const admin = () => async (dispatch, getState) => {
   dispatch(requestAdmin());
   try {
-    // Manera de ejecutar una request con thunk + axios
     const response = await api.get(
-      "https://www.mockachino.com/0f831a2e-fdf5-46/users"
+      "https://www.mockachino.com/88936805-ec18-4f/users"
     );
 
     dispatch(requestAdminSuccess(response.data));
